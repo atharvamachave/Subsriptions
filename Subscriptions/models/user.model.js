@@ -21,10 +21,10 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: [true, 'User password is required'],
       minLength: 6,
-      maxLength: 50,
+      maxLength: 200,
     },
   },
-  { Timestamps: true }
+  { timestamps: true }
 );
 
 const User = mongoose.model('User', userSchema);
